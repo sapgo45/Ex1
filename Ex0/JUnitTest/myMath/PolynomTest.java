@@ -88,4 +88,18 @@ class PolynomTest {
 		assertTrue(m1.isZero());
 		assertFalse(m2.isZero());		 
 	 }
+
+@Test
+void testroot() {
+	Polynom p1 = new Polynom("2X");
+	assertEquals(0, p1.root(-2, 10, 0.01), 0.01);	
+}
+@Test
+void testarea() {
+	Polynom p1 = new Polynom("x");
+	assertEquals(50, p1.area(0, 10, 0.01), 0.1);
+	Polynom p2 = new Polynom("x + 3");
+	assertEquals(80.0, p2.area(0, 10, 0.01), 0.1);
+	
+}
 }
