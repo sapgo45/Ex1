@@ -68,3 +68,12 @@ multiply monom-
 
 
 
+
+ the gral is additioanl jar file to represnt fronted reslat of the graph
+
+
+
+
+
+
+
