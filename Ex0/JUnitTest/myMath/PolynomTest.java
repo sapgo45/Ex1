@@ -28,7 +28,7 @@ class PolynomTest {
 
 
 
-	@Test
+	@Test// testing f method in j unit for class Polynom
 	void fTest() {
 		Polynom m = new Polynom ("x^2 + 4X");
 		assertEquals(12, m.f(2));
@@ -36,7 +36,7 @@ class PolynomTest {
 	}
 
 	@Test
-	void addTEST() {
+	void addTEST() {// testing add method in j unit for class Polynom
 		Polynom m = new Polynom ("x^2 + 4");
 		Polynom m1 = new Polynom ("x^2 + 2");
 		m1.add(m);
@@ -44,14 +44,14 @@ class PolynomTest {
 	}
 	@Test
 
-	void add1TEST() {
+	void add1TEST() {// testing add Monom method in j unit for class Polynom
 		Polynom m = new Polynom ("x^2 + 4");
 		Monom m1 = new Monom ("x^2");
 		m.add(m1);
 		assertEquals("2.0X^2 + 4.0", m.toString());
 	}
 	@Test
-	void substracttest() {
+	void substracttest() {// testing substurct method in j unit for class Polynom
 		Polynom m = new Polynom ("x^2 + 4");
 		Polynom m1 = new Polynom ("x^2 + 2");
 		m.substract(m1);
@@ -59,21 +59,21 @@ class PolynomTest {
 
 	}
 	@Test
-	void substracttest1() {
+	void substracttest1() {// testing substruct Monom method in j unit for class Polynom
 		Polynom m = new Polynom ("x^2 + 4");
 		Monom m1 = new Monom ("x^2");
 		m.substract(m1);;
 		assertEquals("4.0", m.toString());
 	}
 	@Test
-	void multiplytst() {
+	void multiplytst() {// testing multyply method in j unit for class Polynom
 		Polynom m = new Polynom ("2x^2 + 4");
 		Polynom m1 = new Polynom ("x^2 + 2");
 		m.multiply(m1);
 		assertEquals("2.0X^4 + 8.0X^2 + 8.0", m.toString());
 	}
 	@Test
-	void equalstst() {
+	void equalstst() {// testing equal method in j unit for class Polynom
 		Polynom m = new Polynom ("2x^2 + 4");
 		Polynom m1 = new Polynom ("x^2 + 2");
 		Polynom m2 = new Polynom ("x^2 + 2");
@@ -82,7 +82,7 @@ class PolynomTest {
 		assertFalse(m2.equals(m));
 	}
 	@Test
-	 void isZerotst () {
+	 void isZerotst () {// testing iszero method in j unit for class Polynom
 		Polynom m2 = new Polynom ("x^2 + 2");
 		Polynom m1 = new Polynom ();
 		assertTrue(m1.isZero());
@@ -90,12 +90,12 @@ class PolynomTest {
 	 }
 
 @Test
-void testroot() {
+void testroot() {// testing root method in j unit for class Polynom
 	Polynom p1 = new Polynom("2X");
 	assertEquals(0, p1.root(-2, 10, 0.01), 0.01);	
 }
 @Test
-void testarea() {
+void testarea() {// testing area method in j unit for class Polynom
 	Polynom p1 = new Polynom("x");
 	assertEquals(50, p1.area(0, 10, 0.01), 0.1);
 	Polynom p2 = new Polynom("x + 3");

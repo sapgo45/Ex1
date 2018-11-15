@@ -10,7 +10,8 @@ import myMath.Monom;
  * 1. Riemann's Integral: https://en.wikipedia.org/wiki/Riemann_integral
  * 2. Finding a numerical value between two values (currently support root only f(x)=0).
  * 3. Derivative
- * 
+ *  *id: 204548523
+
  * @author Raam and sapir
  * @version 1.0
  */
