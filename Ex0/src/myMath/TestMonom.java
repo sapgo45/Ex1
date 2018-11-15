@@ -26,8 +26,6 @@ public class TestMonom {
 		
 		m2.add(m1);
 		System.out.println(m1+" + "+m1+" = "+m2);
-		m1.derivative();
-		System.out.println(m1.toString());
 	}
 
 
