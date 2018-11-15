@@ -28,7 +28,7 @@ class MonomTest {
 	}
 
 	@Test
-	void derivativetst() {
+	void derivativetst() {		// testing derivative method in j unit for class Monom
 		Monom m= new Monom(3,2);
 		m.derivative();
 		assertEquals(6, m.get_coefficient());
@@ -38,14 +38,14 @@ class MonomTest {
 		assertTrue("err derivative", m.equals(exp));
 	}
 	
-	@Test
+	@Test	// testing f method in j unit for class Monom
 	void ftest() {
 		Monom m1 = new Monom(2,3);
 		assertEquals(2, m1.f(1));	
 	}
 	
 	@Test
-	void addtest() {
+	void addtest() {// testing add method in j unit for class Monom
 		Monom m= new Monom(3,2);
 		Monom m2= new Monom(6,2);
 		m.add(m2);
@@ -53,14 +53,14 @@ class MonomTest {
 		assertEquals(2, m.get_power());
 	}
 	@Test
-	void substracttest() {
+	void substracttest() {// testing substruct method in j unit for class Monom
 		Monom m= new Monom(3,2);
 		Monom m2= new Monom(6,2);
 		m2.substract(m);
 		assertEquals(3, m.get_coefficient());
 		assertEquals(2, m.get_power());
 	}
-	@Test
+	@Test// testing multiply method in j unit for class Monom
 	void multiplytest() {
 		Monom m= new Monom(3,2);
 		Monom m2= new Monom(6,2);
@@ -71,7 +71,7 @@ class MonomTest {
 		
 	}
 	
-	@Test
+	@Test// testing equal method in j unit for class Monom
 	void equalstest() {
 		Monom m= new Monom(3,2);
 		Monom m2= new Monom(3,2);
@@ -81,7 +81,7 @@ class MonomTest {
 
 		
 	}
-	@Test
+	@Test// testing string method in j unit for class Monom
 	void stringtest() {
 		Monom m= new Monom("3x^2");
 		assertEquals("3.0X^2", m.toString());
